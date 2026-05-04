@@ -1,0 +1,23 @@
+artifact_path: file:///C:/model/laptop-price-prediction/mlruns/1/models/m-e8c1dce420be4a988ba6acd546ae7930/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.6
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.0
+    skops_trusted_types: null
+mlflow_version: 3.11.1
+model_id: m-e8c1dce420be4a988ba6acd546ae7930
+model_size_bytes: 2510
+model_uuid: m-e8c1dce420be4a988ba6acd546ae7930
+prompts: null
+run_id: a358a4afc38046fe8f6107156b5ef34d
+utc_time_created: '2026-04-28 13:39:47.824662'

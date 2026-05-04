@@ -23,6 +23,7 @@ EXPOSE 5000
 # first app refers to file name app.py and second to flask object app=Flask(__name__)
 CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
 
+RUN pip install mlflow 
 
 
 #step 1

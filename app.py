@@ -1,5 +1,7 @@
 from flask import Flask, request, jsonify
-import pickle
+import mlflow
+
+
 import pandas as pd
 import numpy as np
 import re
@@ -8,9 +10,12 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-# ✅ Load full pipeline (not just model)
-with open("laptop_price_model.pkl", "rb") as file:
-    model = pickle.load(file)
+
+
+
+
+
+model = mlflow.pyfunc.load_model("models:/laptop_price_model/latest")
 
 # -------- HELPER FUNCTIONS -------- #
 
